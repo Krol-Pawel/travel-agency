@@ -9,11 +9,11 @@ class TripListOptions extends React.Component {
     if(checked) {
       console.log('Adding tag', tag);
       // TODO - use action dispatcher from props
-      this.props.changeTag.push(tag);
+      this.props.addTag(tag);
     } else {
       console.log('Removing tag', tag);
       // TODO - use action dispatcher from props
-      this.props.changeTag.remove(tag);
+      this.props.removeTag(tag);
     }
   }
 

@@ -11,6 +11,7 @@ import Countries from './components/views/Countries/CountriesContainer';
 import Regions from './components/views/Regions/RegionsContainer';
 import Country from './components/views/Country/CountryContainer';
 import {AnimatedSwitch} from 'react-router-transition';
+import Trip from './components/views/Trip/TripContainer';
 
 // TODO - import other views
 import Info from './components/views/Info/Info';
@@ -54,7 +55,7 @@ class App extends React.Component {
             {/* TODO - add more routes for other views */}
             <Route exact path='/countries' component={Countries} />
             <Route exact path='/regions' component={Regions} />
-            <Route exact path='/trips/:id' component={Trips} />
+            <Route exact path='/trip/:id' component={Trip} />
             <Route exact path='/country/:id' component={Country} />
             <Route exact path='/info' component={Info} />
             <Route path='*' component={NotFound} />
