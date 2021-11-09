@@ -12,7 +12,7 @@ const newValueSet = (currentValue, id, checked) => {
   }
 };
 
-const OrderOptionCheckboxes = ({ values, formatPrice, setOptionValue, currentValue }) =>(
+const OrderOptionCheckboxes = ({ values, setOptionValue, currentValue }) =>(
   <div className={styles.checkboxes}>
     {values.map(value => (
       <label key={value.id}>

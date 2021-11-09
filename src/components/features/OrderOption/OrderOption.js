@@ -7,6 +7,7 @@ import OrderOptionIcons from './OrderOptionIcons';
 import OrderOptionNumber from './OrderOptionNumber';
 import OrderOptionText from './OrderOptionText';
 import OrderOptionDate from './OrderOptionDate';
+import PropTypes from 'prop-types';
 
 const optionTypes = {
   dropdown: OrderOptionDropdown,
@@ -32,6 +33,13 @@ const OrderOption = ({name, type, id, setOrderOption, ...otherProps}) =>{
       </div>
     );
   }
+};
+
+OrderOption.propTypes = {
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  id: PropTypes.string,
+  setOrderOption: PropTypes.func,
 };
 
 
