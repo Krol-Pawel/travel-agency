@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import OrderOption from './OrderOption';
-// import DatePicker from 'react-datepicker';
+import DatePicker from 'react-datepicker';
 
 describe('Component OrderOption', () => {
   it('should render without crashing', () => {
@@ -108,7 +108,7 @@ describe('Component OrderOption', () => {
           });
           /* tests for dropdown */
           break;
-        };
+        }
         case 'icons': {
           it('contains div with class icon', () => {
             const icon = renderedSubcomponent.find('.icon');
@@ -120,9 +120,9 @@ describe('Component OrderOption', () => {
             renderedSubcomponent.find('.icon').simulate('click');
             expect(mockSetOrderOption).toBeCalledTimes(1);
           });
-        //   /* tests for icon */
+          //   /* tests for icon */
           break;
-        };
+        }
         case 'checkboxes': {
           it('contains checkboxes', () => {
             const checkbox = renderedSubcomponent.find('input[type="checkbox"]');
@@ -135,20 +135,20 @@ describe('Component OrderOption', () => {
           });
           /* tests for checkboxes */
           break;
-        };
-        // case 'date': {
-        //   // it('contains date', () => {
-        //   //   const dateComponent = DatePicker.find('DatePicker')
-        //   //   expect(dateComponent.length).toBe(1);
-        //   // });
-        //   // it('should run setOrderOption function on change date', () => {
-        //   //   renderedSubcomponent.find(DatePicker).simulate('change', {testValue});
-        //   //   expect(mockSetOrderOption).toBeCalledTimes(1);
-        //   //   expect(mockSetOrderOption).toBeCalledWith({[mockProps.id]: testValue});
-        //   // });
-        // //   /* tests for date */
-        //   break;
-        // };
+        }
+        case 'date': {
+          it('contains date', () => {
+            const dateComponent = renderedSubcomponent.find(DatePicker);
+            expect(dateComponent.length).toBe(1);
+          });
+          it('should run setOrderOption function on change date', () => {
+            renderedSubcomponent.find(DatePicker).simulate('change', testValue);
+            expect(mockSetOrderOption).toBeCalledTimes(1);
+            expect(mockSetOrderOption).toBeCalledWith({[mockProps.id]: testValue});
+          });
+          /* tests for date */
+          break;
+        }
         case 'number': {
           it('contains input with type number', () => {
             const numberedImput = renderedSubcomponent.find('input[type="number"]');
@@ -162,7 +162,7 @@ describe('Component OrderOption', () => {
           
           /* tests for number */
           break;
-        };
+        }
         case 'text': {
           it('contains input with type text', () => {
             const numberedImput = renderedSubcomponent.find('input[type="text"]');
@@ -173,11 +173,11 @@ describe('Component OrderOption', () => {
             expect(mockSetOrderOption).toBeCalledTimes(1);
             expect(mockSetOrderOption).toBeCalledWith({ [mockProps.id]: testValue });
           });
-        //   /* tests for text */
+          //   /* tests for text */
           break;
         }
         // no default
       }
     });
   }
-})
+});
