@@ -137,11 +137,11 @@ describe('Component OrderOption', () => {
           break;
         };
         // case 'date': {
-        //   // it('contains select and options', () => {
+        //   // it('contains date', () => {
         //   //   const dateComponent = DatePicker.find('DatePicker')
         //   //   expect(dateComponent.length).toBe(1);
         //   // });
-        //   // it('should run setOrderOption function on change', () => {
+        //   // it('should run setOrderOption function on change date', () => {
         //   //   renderedSubcomponent.find(DatePicker).simulate('change', {testValue});
         //   //   expect(mockSetOrderOption).toBeCalledTimes(1);
         //   //   expect(mockSetOrderOption).toBeCalledWith({[mockProps.id]: testValue});
