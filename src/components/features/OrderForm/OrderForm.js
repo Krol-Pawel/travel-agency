@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 
 const sendOrder = (options, tripCost, tripId, countryCode, tripName) => {
   const totalCost = formatPrice(calculateTotal(tripCost, options));
-
+  console.log(options);
   const payload = {
     ...options,
     totalCost,

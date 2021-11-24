@@ -53,5 +53,11 @@ describe('Component TripSummary', () => {
     const tagsProp = [];
     const component = shallow(<TripSummary tags={tagsProp} />);
     console.log(component.debug());
+    expect(component.containsMatchingElement(<div className='tags' />)).toEqual(false);
+  });
+  it('should not render div with class tags if tags is a empty array or is false', () => {
+    const component = shallow(<TripSummary />);
+    console.log(component.debug());
+    expect(component.containsMatchingElement(<div className='tags' />)).toEqual(false);
   });
 });
