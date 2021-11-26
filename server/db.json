@@ -330,6 +330,57 @@
       "countryCode": "TGO",
       "tripName": "Pleasant trek in outstanding Togo",
       "id": 21
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "hotel",
+      "features": [
+        "security"
+      ],
+      "adults": 1,
+      "children": "1",
+      "name": "gag",
+      "contact": "faf",
+      "start-date": "",
+      "totalCost": "$106,400",
+      "tripId": "5cc1d10107e2be6064ff9129",
+      "countryCode": "ARE",
+      "tripName": "Surprising jaunt in admirable United Arab Emirates",
+      "id": 22
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "hotel",
+      "features": [
+        "security"
+      ],
+      "adults": 1,
+      "children": "1",
+      "name": "gag",
+      "contact": "faf",
+      "start-date": "2021-11-28T10:02:53.000Z",
+      "totalCost": "$106,400",
+      "tripId": "5cc1d10107e2be6064ff9129",
+      "countryCode": "ARE",
+      "tripName": "Surprising jaunt in admirable United Arab Emirates",
+      "id": 23
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "hotel",
+      "features": [
+        "security"
+      ],
+      "adults": 1,
+      "children": "1",
+      "name": "gag",
+      "contact": "faf",
+      "start-date": "2021-11-25T10:02:53.000Z",
+      "totalCost": "$106,400",
+      "tripId": "5cc1d10107e2be6064ff9129",
+      "countryCode": "ARE",
+      "tripName": "Surprising jaunt in admirable United Arab Emirates",
+      "id": 24
     }
   ]
 }
